@@ -1,0 +1,21 @@
+{
+  "name": "angular-blog",
+  "main": "angular-blog.js",
+  "version": "0.0.0",
+  "authors": [
+    "louisjohnbichard <louisjohnbichard@gmail.com>"
+  ],
+  "description": "A simple plugin for markdown based blogs",
+  "keywords": [
+    "blog",
+    "angularJS"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
