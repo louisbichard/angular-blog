@@ -5,7 +5,7 @@ angular.module('angular-blog', [])
         scope: {
             posts: '=posts'
         },
-        controller: function($scope, $sanitize) {
+        controller: function($scope) {
 
             $scope.output = [];
             $scope.converter = new Showdown.converter();
