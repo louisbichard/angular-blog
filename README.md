@@ -5,7 +5,7 @@ A markdown based blog for angular
 
 #Installation
 
-  bower install angular-blog
+     bower install angular-blog
 
 ## Notes
 
