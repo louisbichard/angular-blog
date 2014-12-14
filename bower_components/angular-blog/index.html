@@ -3,42 +3,69 @@
 
 <head>
     <!-- CORE COMPONENTS -->
-    <title>Anvil is running</title>
+    <title>Angular Blog</title>
+    <link rel="shortcut icon" href="angular.ico" />
 
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1" name="viewport" />
 
     <!-- LIBRARY STYLES -->
-    <link href="bower_components/bootstrap/dist/css/bootstrap-theme.min.css" rel="stylesheet" type="text/css">
+    <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" type="text/css">
     <link href='http://fonts.googleapis.com/css?family=Roboto:500,100,300' rel='stylesheet' type='text/css'>
     <!-- CUSTOM STYLES -->
     <style type="text/css">
+    .blog-search {
+        border-top: 0px;
+        border-left: 0px;
+        border-right: 0px;
+        padding: 5px;
+        width: 100%;
+    }
+    .blog-hr {
+        width: 100%;
+        border: none;
+        color: #333;
+        background-color: #000000;
+        height: 3px;
+    }
+    blog > div {
+        box-shadow: 0 2px 5px;
+        background-color: #FEFEFE;
+        padding: 20px;
+    }
     </style>
 
     <!-- SCRIPTS -->
     <script src="bower_components/angular/angular.min.js"></script>
     <script src="bower_components/angular-blog/angular-blog.js"></script>
+    <script src="bower_components/showdown/compressed/showdown.js"></script>
+    <script src="bower_components/angular-sanitize/angular-sanitize.min.js"></script>
     <script>
-    
     // INITIALISE APP
-    blog_demo = angular.module('blog_demo', ['angular-blog'])
+    blog_demo = angular.module('blog_demo', ['angular-blog', 'ngSanitize'])
 
     // CREATE TEST CONTROLLER
-    .controller('mainController', function($scope){
-      $scope.posts = ['somepath'];
+    .controller('mainController', function($scope) {
+        $scope.posts = ['ablog1.md', 'ablog2.md'];
     })
     </script>
 
-</head >
+</head>
 
 <body>
 
     <div class="container" ng-controller="mainController">
         <div class="row">
             <div class="col-md-12">
-                <h1> Angular Blog </h1>                
-                {{posts}}
+                <h1 class="text-center"> Angular Blog </h1>
+                <p class="text-center lead"> A basic blog implementation for Angular </p>
+                <p class="text-center lead">License: MIT</p>
+
+
+                <br>
+
                 <blog posts="posts"></blog>
+                <br> 
             </div>
         </div>
     </div>

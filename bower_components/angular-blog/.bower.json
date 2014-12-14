@@ -18,11 +18,11 @@
     "tests"
   ],
   "homepage": "https://github.com/louisbichard/angular-blog",
-  "_release": "8dc534f308",
+  "_release": "794029d148",
   "_resolution": {
     "type": "branch",
     "branch": "master",
-    "commit": "8dc534f3080be8dce8831d93ef25695f9ba7dedc"
+    "commit": "794029d148b3e1ff23c850819a39c6ba04d245c3"
   },
   "_source": "git://github.com/louisbichard/angular-blog.git",
   "_target": "*",

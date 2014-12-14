@@ -46,7 +46,19 @@
 
     // CREATE TEST CONTROLLER
     .controller('mainController', function($scope) {
-        $scope.posts = ['ablog1.md', 'ablog2.md'];
+        $scope.posts = [{
+            path: 'ablog1.md',
+            author: 'Louis John Bichard',
+            date: '14th December 2014',
+            title: 'Some blog 1',
+            tags: ['Brogrammer, Patience']
+        }, {
+            path: 'ablog2.md',
+            tags: ['Brogrammer, Patience'],
+            author: 'Louis John Bichard',
+            date: '14th December 2014',
+            title: 'Some blog 2'
+        }];
     })
     </script>
 
@@ -65,7 +77,7 @@
                 <br>
 
                 <blog posts="posts"></blog>
-                <br> 
+                <br>
             </div>
         </div>
     </div>

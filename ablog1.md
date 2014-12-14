@@ -1,4 +1,3 @@
-#A blog post 1
 
 ##Markdown subheading
 
