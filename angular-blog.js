@@ -23,7 +23,7 @@ angular.module('angular-blog', [])
 
                 $scope.pushToOuput = function(args, markdown_content) {
                     $scope.$apply(function() {
-                        $scope.output.push(args.title + args.data_string + args.click_to_copy + '<hr>' + markdown_content + '<hr class=\'blog-hr\'>');
+                        $scope.output.push(args.title_html + args.data_string + args.click_to_copy + '<hr>' + markdown_content + '<hr class=\'blog-hr\'>');
                     });
                 };
 
@@ -56,7 +56,7 @@ angular.module('angular-blog', [])
                 };
 
                 $scope.getFile = function(args) {
-                    args.title = $scope.convertTitleToHTML(args.title);
+                    args.title_html = $scope.convertTitleToHTML(args.title);
                     args = $scope.convertTagsToString(args);
 
                     var xmlhttp = $scope.getHttp();
