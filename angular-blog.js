@@ -48,9 +48,8 @@ angular.module('angular-blog', [])
 
                     // CONSTRUCT TAG STRING
                     var curr_tags = args.tags || [];
-                    var blog_id = "&nbsp;||&nbsp;" + args.id || "";
                     var link = $scope.prepareLink($scope.share_url + args.title);
-                    args.data_string = "<p class=\'blog-metadata\'>" + args.author + "&nbsp;||&nbsp;" + args.date + "&nbsp;||&nbsp" + curr_tags.join(', ') + blog_id + "</p>";
+                    args.data_string = "<p class=\'blog-metadata\'>" + args.author + "&nbsp;||&nbsp;" + args.date + "&nbsp;||&nbsp" + curr_tags.join(', ') + "</p>";
                     args.click_to_copy = ($scope.share_url) ? "<p> Share this: " + "<span class='blog-link' >" + link + "</span></p>" : "";
                     return args;
                 };
