@@ -3,6 +3,8 @@ angular-blog
 
 A markdown based blog for angular
 
+See the working demo [here](http://louisbichard.github.io/angular-blog/)
+
 #Installation
 
      bower install angular-blog
